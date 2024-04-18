@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <div id="show"></div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#show").load("text.txt");
+        });
+    </script>
+    <!-- <button onclick="getRepo()">Get Name</button> -->
+    <script>
+        /*
+        function getRepo() {
+            let myRequest = new XMLHttpRequest();
+            myRequest.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    console.log(this.responseText);
+                    // console.log(JSON.parse(this.responseText));
+                    
+                    // Convert ResponseText To JS Object
+                //     let myJsObject = JSON.parse(this.responseText),
+                //         myText = "";
+
+                //     for (let i = 0; i < myJsObject.length; i++) {
+                //         myText += myJsObject[i].username + "<br>";
+                //     }
+                //     document.getElementById("show").innerHTML = myText;
+                }
+            };
+
+            myRequest.open("GET", "auth.php?name=Yousef", true);
+            myRequest.send();
+        }
+        */
+    </script>
+</body>
+</html>
